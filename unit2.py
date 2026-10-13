@@ -1,0 +1,190 @@
+print(20)
+#This is an integer, it's an integer number.
+a = 41
+print(type(a))
+#The class shown as "int" stands for integer.
+print(1.4)
+#This is a float, it's a decimal number.
+b = 6.71345
+print(type(b))
+#The class shown is "float".
+print(True)
+print(False)
+#These are Boolean classes, they only are True/False.
+c = True
+print(type(c))
+#The class shown as "bool" stands for boolean.
+print("Hi")
+#This is a string, it's just words... i mean...
+d = "Welcome to Python"
+print(type(d))
+#The class shown as str stands for string.
+
+
+# The a, b, c, d are called VARIABLES. Creating a variable has to follow some rules:
+# 1) Variable names cannot start with numbers, but it can end with or contain numbers.
+k1h2 = "a 'string' variable"
+#12kh will show an error!
+
+# 2) A variable name can be defined more than one, however only the last definition will be valid...
+number1 = 10
+print(number1)
+number1 = 20
+print(number1)
+# ...unless if added a mathematical operator before = will assign the output of the equasion to the same variable.
+print(number1)
+number1 += 30
+print(number1)
+
+# 3) Variable definitions are uppercase sensitive!
+example = "im an example"
+Example = "im the other example with a capital e so i'm way cooler"
+print(example)
+print(Example)
+
+# 4) Space cannot be used.
+
+
+#NOTE: Definitions can be made in only one line as well.
+x, y, z = (1, "y", True)
+
+
+
+# MATHEMATICAl OPERATORS
+'''
+Sum = +
+Minus = -
+Multiply = *
+Division = /
+Power = **
+Whole Division = //
+Mod = %
+
+'''
+
+print (a + b)
+print(number1 ** b)
+print(a / number1)
+
+#String summation merges the characters assigned.
+
+print(example + ", " + "Hi" + " "+ d)
+print(":]")
+
+
+
+#EXAMPLE:
+'''
+Create a set of variables for a customer and welcome it to the system:
+Customer Name
+Customer Surname
+Customer Name Surname
+Customer Gender
+Customer SSN
+Customer Birth Year
+Customer Adress
+Customer Age
+'''
+nameCustomer = "Metehan"
+surnameCustomer = "Bayhan"
+namesurnameCustomer = nameCustomer + " " + surnameCustomer
+genderCustomer = "M"
+ssnCustomer = "11111111111"
+byCustomer  = 2007
+adrCustomer = "Python Road, No: 11/11, Cankaya/Ankara/TURKIYE"
+ageCustomer = 2026 - byCustomer
+
+print("Welcome " + nameCustomer + ".")
+
+
+
+# Input and Variable Conversion
+
+# input command lets the user enter the value of a variable IN STRING
+# so in some occasions, we must reclass the string (ex. string --> int)
+
+enter1 = input("Enter the first number of the summation ")
+enter2 = input("Enter the second number of the summation ")
+summation = enter1 + enter2
+print(summation)
+# print will show 1221 as the string summation, enter1 and enter2 should be transformed
+# into int.
+print(type(enter1))
+print(type(enter2))
+enter1 = int(enter1)
+print(type(enter1))
+# TRANSFORMED INTO INT!
+enter2 = int(enter2)
+print(enter1 + enter2)
+# all the conversions can be used with "int, bool, str, float" etc. ( true to int = 1, f = 0)
+# NOTE: when printing or doing summation with str, other classes will not sum.
+# so str(int value) should be used after mathematical calculations.
+# \n gets the string into one line down
+# NOTE: Every string starts with char 0 and ends with char n. All the chars can bee
+# seen with command len, len-1 will show all the char numbers, EX:
+# Hello World.
+# 0 1 2 3 4 5 6 7 8 9 10 11 (left to right char system)
+# =======================
+# -12 -11 -10 -9 -8 -7 -6 -5 -4 -3 -2 -1 (right to left char system)
+# len= 12
+len2 = "learning python"
+print(len(len2))
+print(len2)
+# adding [char number] to the end of the str will only print that char
+print(len2[2])
+# adding [first char number : end char number] to the end of str will print that chars 
+# & between (END NOT ADDED)
+print(len2[1:6])
+# not adding first char number will start from the beggining and end in end char number
+#(END NOT ADDED)
+# alike, not adding end char number will start at first char number and end at the end of str
+#(END NOT ADDED).
+# adding [first char number : end char number : mod] to the end of str
+# will print that chars & between skipping mod (END NOT ADDED)
+len3 = "0123456789"
+print(len3[0:8:2])
+
+
+
+# STRING FORMATTING
+"""
+Arguments can be added in strings with the help of {}, and afrer .format()
+.format will take the arguments in the order; 0,1,2,3...
+We can numerise the arguments ourselves to change the order of .format
+{1} {0} {3} {2}
+or can name the arguments then order the format ourselves
+{n} {u} .format (n=variable1, u=variable2)
+ NOTE: formatting does NOT require conversation when printing strings, int's can stay etc.
+ NOTE: when formatting floats. {float: x.y} parameters can be used, this parameters
+ determine x: spaces for the whole part, y:characters in decimal
+
+ NOTE: .format can be directly shortened like f"string {var directly here}"
+
+"""
+ # REFER TO test2.1.py for applicational question solutions.
+
+
+
+ #STRING METHODS
+"""
+Just like .format, there are many other string methods.
+.upper = UPPERCASE STRING
+.lower = LOWERCASE STRING
+.title = ALL THE INITIALS UPPERCASE
+.capitalise = STR'S FIRST INITIAL WILL BE UPPERCASE
+.strip = DELETES THE SPACE AT FIRST AND LAST CHARS
+.split = GIVES A SET DECIDED BY SPACES
+"joinedbywhat".join(str) = MERGES THE SET DIVIDED BY .split
+.find = FINDS THE GIVEN PRMTR IN STR (-1: not there, any other: starts with that char)
+.startswith = GIVES A BOOL ON STR'S INITIAL'S STATUS ON PRMTR
+.endswith = GIVES A BOOL ON STR'S ENDING'S STATUS ON PRMTR
+.replace("","") = REPLACES FIRST PRMTR FOUND IN STR WITH SECOND PRMTR
+.center("","") = CENTERS THE STR IN GIVEN PRMTR SIZED BOX, BOX FILLED WITH SECOND PRMTR
+
+parameters can be defined (ex .split(.) will give a set decided by dots.)
+NOTE: That these are methods, () should be done even if no parameters specified.
+NOTE: a string can have multiple methods, ex: str.strip().split(.) etc.
+NOTE: These are the most used. Every method can be found on:
+https://www.w3schools.com/Python/python_ref_string.asp
+ examples can be found on test2.2.py
+""" 
