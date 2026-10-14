@@ -197,3 +197,74 @@ print(first_list)
 sec_list = ["iki", 1, False, 6.5]
 mlist = [first_list, sec_list]
 print(mlist)
+#Refer to test 2.3.py for demo on lists.
+#There are methods in lists just like in strings.
+#min(first_list) #selects the smallest number / first in alphabet in given list
+#max(first_list) #selects the largest number / last in alphabet in given list
+mlist.append("addasomethinghere") #adds the bracketed value to the end of the list
+mlist.insert(2,"addthisbeforeaddsomethinghere") #adds the 2nd parameter before the number char first parameter
+sec_list.pop() #removes the parametered character
+sec_list.remove(1) #removes the parametered VALUE!
+#first_list.sort() #sorts the list by alphabeticly / numericly
+sec_list.reverse() #reverses the list by the given order
+first_list.count(2) #counts how many parametered values there are in the given list
+first_list.clear()
+sec_list.clear()               #clears the list and makes the set empty ( [] )
+mlist.clear()
+# Tuple's exists as well, they are just like lists but cant be assigned/changed afterwards of definition.
+# Tuple definition is made with tuplenamevar = "x0" ,"y"   or for better reading tuplenamevar = ("x0", 2)
+hituple = (4, "hi")
+# There's another list like class, caled dictionary, check this:
+sehirler = ["sakarya" , "ankara" , "kayseri"]
+plakalar = [54 , 6 , 38]
+print("Ankara'nın plakası şudur: " + str(plakalar[sehirler.index("ankara")]))
+# Thats not lightweight at all, and the indexes should be equal. For calling another info with an info, we create DICTIONARIES.
+# They are defined by {} instead of [] like lists. The first var is KEY, then the called var will be VALUE
+plakadict = {"ankara":6, "sakarya":54, "kayseri":38}
+print(plakadict["ankara"])
+# Dict's can be assigned/changed unlike tuple's
+# Dict key's can be added into new keys!
+user = {"Metehan": {
+"age":20,
+"gender":"M",
+"address":"Ankara",
+
+
+
+}
+        
+        
+        }
+
+print(user["Metehan"])
+print(user["Metehan"]["address"])
+
+#There's another data type, called SETS. Sets cannot be indexed, and defined with {} like dicts however without :value
+# Works in for loops, will be covered
+fruits = { "banana", "cucumber", "eggplant"}
+
+for hoho in fruits:
+    print(hoho)
+
+# can be added new vars with .add()
+# can be added new vars SIMULTANIOUSLY with .update(["new1", "new2"])etc. and can only contain one SAME variable!
+# sets have .discard() instead of .remove
+
+
+#IN VALUE TYPES ( int float str bool), ASSIGNABLE DATA IS SEPERATE.
+abc= 1
+cba = 2
+abc = cba
+cba = 3
+print(abc, cba)
+#BUT IN REFERENCE TYPES (list and subtypes of lists), ASSIGNABLE DATA IS CONNECTED!
+klm = ["hi", "hello", "whats up"]
+yht = ["what", "you", "sayin?"]
+klm = yht
+yht[0] = "wow"
+yht[2] = "azaelia banks?"
+print(klm , yht)
+'''
+END OF UNIT2
+
+'''
