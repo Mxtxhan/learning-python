@@ -188,3 +188,12 @@ NOTE: These are the most used. Every method can be found on:
 https://www.w3schools.com/Python/python_ref_string.asp
  examples can be found on test2.2.py
 """ 
+# You can create string lists by defining a variable with []
+first_list = ["bir", 2, True, 5.6]
+print(first_list)
+#Lists can be treated like a string variable. (summation, len, etc.)
+# Multiple lists can be added into a main list and be treated like
+# seperate vars.
+sec_list = ["iki", 1, False, 6.5]
+mlist = [first_list, sec_list]
+print(mlist)
