@@ -2,16 +2,8 @@
 print("         *** WELCOME TO ***" + "\n   TYT Net Calculator & Study Card ")
 
 print(">> Please Log In.")
-name = input("NAME: ")
-surname = input("SURNAME: ")
-name = name.strip()
-surname = surname.strip()
-name = name.replace(" ", "")
-surname = surname.replace(" ", "")
-name = name.lower()
-surname = surname.lower()
-name = name.capitalize()
-surname = surname.capitalize()
+name = " ".join(input("NAME: ").split()).title()
+surname = " ".join(input("SURNAME: ").split()).title()
 print("         *** WELCOME " + name + " " + surname + " ***")
 
 
@@ -19,19 +11,15 @@ print("         *** WELCOME " + name + " " + surname + " ***")
 print(name + ", Please Log Your TYT Questions")
 print(">>TURKISH:")
 turkish = [input("Your Correct Questions: "), input("Your False Questions: "), input("Questions You Left Unanswered: ")]
-print("SYSTEMCHCK: " + str(turkish))
 
 print(">>SOCIAL STUDIES:")
 social = [input("Your Correct Questions: "), input("Your False Questions: "), input("Questions You Left Unanswered: ")]
-print("SYSTEMCHCK: " + str(social))
 
 print(">>MATHEMATICS:")
 mathgeo = [input("Your Correct Questions: "), input("Your False Questions: "), input("Questions You Left Unanswered: ")]
-print("SYSTEMCHCK: " + str(mathgeo))
 
 print(">>SCIENCE:")
 science = [input("Your Correct Questions: "), input("Your False Questions: "), input("Questions You Left Unanswered: ")]
-print("SYSTEMCHCK: " + str(science))
 
 
 # Calculation of Nets.
