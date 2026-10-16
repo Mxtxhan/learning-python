@@ -36,7 +36,7 @@ print(number1)
 number1 += 30
 print(number1)
 
-# 3) Variable definitions are uppercase sensitive!
+# 3) Variable definitions are case sensitive!
 example = "im an example"
 Example = "im the other example with a capital e so i'm way cooler"
 print(example)
@@ -161,7 +161,7 @@ or can name the arguments then order the format ourselves
  NOTE: .format can be directly shortened like f"string {var directly here}"
 
 """
- # REFER TO test2.1.py for applicational question solutions.
+ # REFER TO string_ex.py for applicational question solutions.
 
 
 
@@ -171,14 +171,14 @@ Just like .format, there are many other string methods.
 .upper = UPPERCASE STRING
 .lower = LOWERCASE STRING
 .title = ALL THE INITIALS UPPERCASE
-.capitalise = STR'S FIRST INITIAL WILL BE UPPERCASE
-.strip = DELETES THE SPACE AT FIRST AND LAST CHARS
-.split = GIVES A SET DECIDED BY SPACES
-"joinedbywhat".join(str) = MERGES THE SET DIVIDED BY .split
+.capitaliZe = STR'S FIRST INITIAL WILL BE UPPERCASE
+.strip = DELETES THE SPACE AT FIRST AND LAST CHARS IF WHITESPACE (space, tabs, trails, etc.)
+.split = GIVES A LIST DECIDED BY SPACES
+"joinedbywhat".join(str) = MERGES THE LIST DIVIDED BY .split
 .find = FINDS THE GIVEN PRMTR IN STR (-1: not there, any other: starts with that char)
 .startswith = GIVES A BOOL ON STR'S INITIAL'S STATUS ON PRMTR
 .endswith = GIVES A BOOL ON STR'S ENDING'S STATUS ON PRMTR
-.replace("","") = REPLACES FIRST PRMTR FOUND IN STR WITH SECOND PRMTR
+.replace("","") = REPLACES ALL PRMTR FOUND IN STR WITH SECOND PRMTR
 .center("","") = CENTERS THE STR IN GIVEN PRMTR SIZED BOX, BOX FILLED WITH SECOND PRMTR
 
 parameters can be defined (ex .split(.) will give a set decided by dots.)
@@ -186,7 +186,7 @@ NOTE: That these are methods, () should be done even if no parameters specified.
 NOTE: a string can have multiple methods, ex: str.strip().split(.) etc.
 NOTE: These are the most used. Every method can be found on:
 https://www.w3schools.com/Python/python_ref_string.asp
- examples can be found on test2.2.py
+ examples can be found on string_methods_ex.py
 """ 
 # You can create string lists by defining a variable with []
 first_list = ["bir", 2, True, 5.6]
@@ -197,15 +197,15 @@ print(first_list)
 sec_list = ["iki", 1, False, 6.5]
 mlist = [first_list, sec_list]
 print(mlist)
-#Refer to test 2.3.py for demo on lists.
+#Refer to lists_ex.py for demo on lists.
+#min(notamixedlist) #selects the smallest number / first in alphabet in given list
+#max(notamixedlist) #selects the largest number / last in alphabet in given list
 #There are methods in lists just like in strings.
-#min(first_list) #selects the smallest number / first in alphabet in given list
-#max(first_list) #selects the largest number / last in alphabet in given list
 mlist.append("addasomethinghere") #adds the bracketed value to the end of the list
 mlist.insert(2,"addthisbeforeaddsomethinghere") #adds the 2nd parameter before the number char first parameter
 sec_list.pop() #removes the parametered character
 sec_list.remove(1) #removes the parametered VALUE!
-#first_list.sort() #sorts the list by alphabeticly / numericly
+#notamixedlist.sort() #sorts the list by alphabeticly / numericly
 sec_list.reverse() #reverses the list by the given order
 first_list.count(2) #counts how many parametered values there are in the given list
 first_list.clear()
