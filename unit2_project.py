@@ -7,19 +7,19 @@ surname = " ".join(input("SURNAME: ").split()).title()
 print("         *** WELCOME " + name + " " + surname + " ***")
 
 
-# Defination and Gathering of TYT Correct, False and Blank Questions
+# Defination and Gathering of TYT Correct and False Questions
 print(name + ", Please Log Your TYT Questions")
 print(">>TURKISH:")
-turkish = [input("Your Correct Questions: "), input("Your False Questions: "), input("Questions You Left Unanswered: ")]
+turkish = (input("Your Correct Questions: "), input("Your False Questions: "))
 
 print(">>SOCIAL STUDIES:")
-social = [input("Your Correct Questions: "), input("Your False Questions: "), input("Questions You Left Unanswered: ")]
+social = (input("Your Correct Questions: "), input("Your False Questions: "))
 
 print(">>MATHEMATICS:")
-mathgeo = [input("Your Correct Questions: "), input("Your False Questions: "), input("Questions You Left Unanswered: ")]
+mathgeo = (input("Your Correct Questions: "), input("Your False Questions: "))
 
 print(">>SCIENCE:")
-science = [input("Your Correct Questions: "), input("Your False Questions: "), input("Questions You Left Unanswered: ")]
+science = (input("Your Correct Questions: "), input("Your False Questions: "))
 
 
 # Calculation of Nets.
@@ -32,12 +32,12 @@ netscience = int(science[0]) - (int(science[1])/4)
 # Printing Output To User
 print("Calculated!")
 print("TYT RESULT CARD".center(50 , "*"))
-print("Student: " + name.upper() + " " + surname.upper())
+print("Student: " + name + " " + surname)
 print(">>NETS:")
-print(">TURKISH:        >SOCIAL")
-print(str(netturkish) + "             " + str(netsocial))
-print(">MATHEMATICS     >SCIENCE")
-print(str(netmathgeo) + "            " + str(netscience))
-print("TYT SCORE:".center(50 , "-"))
-print(str(netturkish + netscience + netsocial + netmathgeo) + "NET(S)")
+print(f"{'>TURKISH: ':<16}{'>SOCIAL: '}")
+print(f"{netturkish:<16.2f}{netsocial:.2f}")
+print(f"{'>MATHEMATICS: ':<16}{'>SCIENCE: '}")
+print(f"{netmathgeo:<16.2f}{netscience:.2f}")
+print("TYT NET:".center(50 , "-"))
+print(str(netturkish + netscience + netsocial + netmathgeo) + " NET(S)")
 print("Happy Studying, " + name + "!")
