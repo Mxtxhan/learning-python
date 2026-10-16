@@ -171,7 +171,7 @@ Just like .format, there are many other string methods.
 .upper = UPPERCASE STRING
 .lower = LOWERCASE STRING
 .title = ALL THE INITIALS UPPERCASE
-.capitaliZe = STR'S FIRST INITIAL WILL BE UPPERCASE
+.capitalize = STR'S FIRST INITIAL WILL BE UPPERCASE
 .strip = DELETES THE SPACE AT FIRST AND LAST CHARS IF WHITESPACE (space, tabs, trails, etc.)
 .split = GIVES A LIST DECIDED BY SPACES
 "joinedbywhat".join(str) = MERGES THE LIST DIVIDED BY .split
