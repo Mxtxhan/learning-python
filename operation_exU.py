@@ -7,3 +7,5 @@ numbers = 1, 5, 7, 10, 6
 #4- y'nin x. kuvvetini hesaplayınız.
 #5- x *y, z numbers işlemine göre z'nin küpü kaçtır?
 #6- x, *y, z = numbers işlemine göre y'nin değerleri topamı kaçtır?
+
+
