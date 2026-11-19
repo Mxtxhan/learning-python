@@ -12,7 +12,8 @@ My notes, exercises and projects while learning python.
  | `string_methods_ex.py` | Excercise: String Methods |
  | `lists_ex.py` | Excercise: Lists |
  | `unit2_project.py` | TYT net calculator ( Unit Completion Project ) |
- |  `unit3.py` | W.I.P |
+ |  `unit3.py` | Operators |
+ | `operation_ex.py` | Exercise: Operations |
 
  ### What's Next?
-Unit 3: Operations in Python.
+Unit 4: Conditionals in Python.
