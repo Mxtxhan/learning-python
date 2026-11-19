@@ -39,7 +39,6 @@ We can use logical operators to combine conditional statements:
 AND: Returns True if both statements are true
 OR: Returns True if one of the statements is true
 NOT: Reverse the result, returns False if the result is true
-
 '''
 result = x > 5 and x < 10 #true 
 print(result)
