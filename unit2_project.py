@@ -27,6 +27,7 @@ netturkish = int(turkish[0]) - (int(turkish[1])/4)
 netsocial = int(social[0]) - (int(social[1])/4)
 netmathgeo = int(mathgeo[0]) - (int(mathgeo[1])/4)
 netscience = int(science[0]) - (int(science[1])/4)
+#
 
 
 # Printing Output To User
