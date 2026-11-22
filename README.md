@@ -27,4 +27,4 @@ Unit 7: Functions in Python.
 
 
 #### Reference:
-I'm following the python course "Sıfırdan İleri Seviye Python Programlama" by Sadık Turan on BTK Akademi. [Here's the link(https://www.btkakademi.gov.tr/portal/course/sifirdan-ileri-seviye-python-programlama-5877)]
+I'm following the python course "Sıfırdan İleri Seviye Python Programlama" by Sadık Turan on BTK Akademi. [Here's the link](https://www.btkakademi.gov.tr/portal/course/sifirdan-ileri-seviye-python-programlama-5877)
