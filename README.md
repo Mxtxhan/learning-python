@@ -11,7 +11,7 @@ My notes, exercises and projects while learning python.
  | `string_ex.py` | Excercise: Strings |
  | `string_methods_ex.py` | Excercise: String Methods |
  | `lists_ex.py` | Excercise: Lists |
- | `unit2_project.py` | TYT net calculator ( Unit Completion Project ) |
+ | `unit3_project.py` | TYT net calculator ( Unit Completion Project ) |
  |  `unit4.py` | Operators |
  | `operation_ex.py` | Exercise: Operations |
  |  `unit5.py` | Conditionals |

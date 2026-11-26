@@ -1,38 +1,76 @@
-# What's if?
-'''
-If statements are used to execute code based on a condition.
-'''
-if 3>2:
-    print("3 is greater than 2")
-if 3<2:
-    print("you cant see this on terminal")
+            #           UNIT 3: OPERATORS IN PYTHON         #
 
-#What's else?
+x, y, z = 5, 10, 20
+print(x, y, z)
+x, y = y, x
+print(x, y, z)
+x += 5   #x = x+5
+x -= 5   #x = x-5
+x *= 5   #x = x*5
+x /= 5   #x = x/5
+x %= 5   #x = x%5
+x //= 5  #x = x//5
+x **= 5  #x = x**5
+
+#Comparision Operators
+password = 123
+user = "mxtxhan"
+a, b, c,d = 5, 5, 10, 4
+result = (a == b) #true
+result = (a == c) #false
+result = (input("Enter your username: ") == user) #true or false
+print(result)
+result = (input("Enter your password: ") == password) #true or false
+print(result)
+# != >>> NOT EQUAL TO
+result = (a != b) #false
+result = (a != c) #true
+result = (a > c) #false
+result = (a < c) #true
+result = (a >= b) #true
+
+#Logical Operators
+x=6
+result = 5 < x < 10
+print(result) #true
+
 '''
-The else statement is used to execute code when the if condition is not met.
+We can use logical operators to combine conditional statements:
+AND: Returns True if both statements are true
+OR: Returns True if one of the statements is true
+NOT: Reverse the result, returns False if the result is true
 '''
+result = x > 5 and x < 10 #true 
+print(result)
+result = x > 5 or x < 10 #true
+print(result)
+result = not(x > 5 and x < 10) #false
+print(result)
+
+#n, 5-10 arasında olan bir çift sayı mı?
+n= int(input("sayı giriniz: "))
+print(n > 5 and n < 10 and n % 2 == 0) 
 
 
-print("Welcome, please log in.")
-usrname = input("Enter your username: ")
-usrpass = input("Enter your password: ")
+#Identiy Operators, is is not
+x = y = [1,2,3]
+z= [1,2,3]
+print(x == y) #true
+print (x == z) #true
+print(x is y) #true
+print(x is z) #false
+# Whats the difference between == and is?
+# == compares the values of both the operands and checks for value equality.
+# is checks whether both the operands refer to the same object in memory or not.
+# "ADRESS" of the object in memory is checked by is operator.
+print(x is not z) #true
+print(x is not y) #false
 
-isLoggedin = usrname == "admin" and usrpass == "123"
-if isLoggedin:
-    print("Welcome back")
-else:
-    print("Credential(s) are wrong.")
 
-
-#What's elif?
-'''
-The elif statement is used to check multiple conditions.
-'''
-x = float(input("Enter a number: "))
-y = float(input("Enter another number: "))
-if x > y:                        # bu durumda böyle yap
-    print("x is greater than y")
-elif x == y:                    #şu durumda böyle yap
-    print("x is equal to y")
-else:                        #diğer durumlarda da bunu yap
-    print("x is greater than y")
+#Membership Operators, in, not in
+x = ["apple", "banana"]
+print("banana" in x) #true
+print("banana" not in x) #false
+name = input("Enter your name: ")
+print("a" in name) #true or false
+print("i" not in name) #true or false
